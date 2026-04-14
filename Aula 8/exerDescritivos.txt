@@ -1,0 +1,59 @@
+1) Explique os seguintes conceitos de POO em java: 
+
+a) O que é uma Classe: Uma classe é a estrutura que serve como modelo para criar objetos. Nela ficam definidos Atributos,
+métodos que os objetos daquele tipo vão possuir.  
+
+b) O que é um Objeto: O objeto é a criaçõa prática de uma classe, se a classe é o molde, o objeto é o elemento real criado
+a partir desse molde. 
+
+c) O que é um Atributo: Atributo sãopo as variáveis criada dentro de uma classe, usadas para armazenar as caracteristicas de
+um objeto. 
+
+d) O que é um método: O método é uma função criada dentro da classe. Representa ações ou comportamentos que o objeto pode
+realizar.
+
+e) O que é o Encapsulamento: É o conceito de proteger os dados de uma classe, evitando que sejam alterados de qualquer forma
+por partes externas do programa. Normalmente isso é feito deixando os atributos como PRIVATE, e permitindo o acesso por métodos
+públicos como GET e SET. Isso ajuda na segurança e na organização do código. 
+
+2) Qual a diferença entre um método construtor e uma classe? Dê um exemplo.
+O método executa uma ação ou comportamento de um objeto e pode ser chamado a qualquer momento. Já o construtor é usado para
+criar/inicializar o objeto. 
+
+public class Pessoa {
+    String nome;
+
+    public Pessoa(String nome) { // construtor
+        this.nome = nome;
+    }
+
+    public void falar() { // método
+        System.out.println("Olá!");
+    }
+}
+
+3) O que são modificadores de acesso em Java. Cite e explique brevemente os principais. 
+Servem para controlar quem pode acessar os atributos, métodos ou classes. 
+Public -> pode ser acessado em qualquer lugar e em qualquer momento 
+Private -> só pode ser acessado dentro da própria classe 
+Protected -> acessado na própria classe, no pacote e por herença 
+default -> acessado apenas dentro do mesmo pacote 
+
+4) Qual a diferença entre os tipos de dados String, int e boolen? De um exemplo de uso de cada um. 
+String -> armazena caracteres 
+int -> armazena numeros inteiros 
+boolen -> amrzena "true" ou "false" 
+    Exemplo: 
+        public class Exemplo {
+            String nome = "Wilson";
+            int idade = 19;
+            boolean aprovado = true; 
+        }
+
+5) Explique o que é e para que serve o método toString() em uma classe. 
+É um método usado para mostrar um objeto em formato de texto. Serve para facilitar a exibição das informações do objeto. 
+    Exemplo: ao dar System.out.println(objeto);, o Java chama o toString().
+
+6) Descreve o que acontece quando se tenta acessar um atributo privado diretamente fora da classe. Como é possível acessa-lo
+de forma correta? 
+Se tentar acessa-lo fora da classe ira ocorrer um erro de acesso, forma correta de acessar é usando o GET e SET. 
