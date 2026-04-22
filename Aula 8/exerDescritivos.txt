@@ -6,7 +6,7 @@ métodos que os objetos daquele tipo vão possuir.
 b) O que é um Objeto: O objeto é a criaçõa prática de uma classe, se a classe é o molde, o objeto é o elemento real criado
 a partir desse molde. 
 
-c) O que é um Atributo: Atributo sãopo as variáveis criada dentro de uma classe, usadas para armazenar as caracteristicas de
+c) O que é um Atributo: Atributo são as variáveis criada dentro de uma classe, usadas para armazenar as caracteristicas de
 um objeto. 
 
 d) O que é um método: O método é uma função criada dentro da classe. Representa ações ou comportamentos que o objeto pode
