@@ -7,7 +7,7 @@ public class PessoaJuridica extends Pessoa{
     private String dataAbertura;
 
     public PessoaJuridica(String nome, int idade, String cnpj, String socio, String dataAbertura){
-        super(nome, idade);
+        super(nome, idade); // chama o construtor da outra classe 
         this.cnpj = cnpj;
         this.socio = socio;
         this.dataAbertura = dataAbertura; 
@@ -21,5 +21,5 @@ public class PessoaJuridica extends Pessoa{
          System.out.println("Data Abertura: "+dataAbertura);
     }
 
-    
+   
 }
