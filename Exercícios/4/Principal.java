@@ -22,6 +22,7 @@ public class Principal {
 
         System.out.println("Preço da mesma casa com "+quartos+" quartos: "+casa.calcularPreco(tamanho, quartos));
         
+        
         teclado.close();
         
     }
